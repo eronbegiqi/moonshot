@@ -8,13 +8,732 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body class="bg-primary">
+<body>
 
-    <h1 class="text-white">Hello SCSS styling</h1>
+    <!-- Header -->
+    <header>
+        <div>
+            <!-- Top prices bar-->
+            <div class=" border-bottom border-gray  py-2 ">
+                <div class="container d-flex justify-content-between">
+                    <div class="topbar d-lg-block overflow-auto">
+                        <span><i class="fa-solid  fa-gas-pump"></i> ETH Gas: <a href="#">123 Gwei <i
+                                    class="fa-solid  fa-angle-down"></i></a></span>
+                        <span> Etherium: <a href="#">$ 4,624.84</a></span>
+                        <span> Binance Chain: <a href="#">$ 458.74</a></span>
+                        <span> Matic: <a href="#">$ 158.74</a></span>
+                        <span> Fantom: <a href="#">$ 138.74</a></span>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <!-- languange -->
+                        <span>English <i class="fa-solid fa-caret-down"></i></span>
+                        <!-- Light/Dark theme toggler-->
+                        <span>Dark <i class="fa-solid fa-moon"></i></span>
 
+                    </div>
+                </div>
+            </div>
+            <!-- Menu navbar -->
+            <div class="border-bottom border-gray py-3">
+                <div class="container d-flex  justify-content-between">
+                    <div class="d-flex flex-row align-items-center nav-bar">
+                        <a href="index.html" class="mx-0">
+                            <img src="assets/logo.png" alt="Logo">
+                        </a>
+                        <div class="d-none d-lg-block ms-3">
+                            <a href="#">Contact Us</a>
+                            <a href="#">Advertising</a>
+                            <a href="#">Submit Coin</a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="form d-none d-lg-block">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="form-control form-input" placeholder="Search coins...">
+                        </div>
+                        <div class="align-items-center log-in d-none d-lg-flex">
+                            <div class="">
+                                <a href="#" class="me-4 ms-1">Log in</a>
+                                <button class="text-light">
+                                    <a href="#">Sign up</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Icon -->
+                    <div class="d-flex align-items-center d-lg-none">
+                        <button id="menu-btn" class="hamburger ">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- Mobile Menu -->
 
+    </header>
+    <!-- Header -->
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Advertisment gif-->
+    <div class="container  d-flex justify-content-center my-5">
+        <div class="">
+            <img src="assets/ad1.gif" class="img-fluid" alt="Animated gif of advertisment">
+        </div>
+
+    </div>
+
+    <div class="container hero">
+        <h1>
+            Newest crypto currency projects
+        </h1>
+        <p>
+            Get on the best new crypto projects before they list on other exchanges.<br>
+            Find the best crypto moonshots on our website voted by crypto community.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="d-flex row justify-content-between">
+
+            <div class="col ">
+                <div class="card mx-auto">
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="assets/flame.png" alt="">
+                        <h3 class="align-middle">
+                            Trending
+                        </h3>
+                    </div>
+                    <div class="mt-3">
+                        <table>
+                            <tr>
+                                <td> 1</td>
+                                <td><img src="assets/Group-1.png" alt=""></td>
+                                <td>Ape Coin</td>
+                                <td>APE</td>
+                                <td>▼ -4.63%</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="assets/Group-2.png" alt=""></td>
+                                <td>Hedra</td>
+                                <td>HBAR</td>
+                                <td>▲ 854.33%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="assets/Group-3.png" alt=""></td>
+                                <td>Saitama Inu</td>
+                                <td>SAT</td>
+                                <td>▲ 88.33%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="assets/Group.png" alt=""></td>
+                                <td>FlexGold</td>
+                                <td>FLGE</td>
+                                <td> ▼ -24.63%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="assets/Vector.png" alt=""></td>
+                                <td>Etherium</td>
+                                <td>ETH</td>
+                                <td>▲ 108.33%</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="d-flex justify-content-center my-3">
+                        <a href="#">More <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card mx-auto">
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="assets/star.png" alt="">
+                        <h3>
+                            New Listing
+                        </h3>
+                    </div>
+                    <div class="mt-3">
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="assets/Group-1.png" alt=""></td>
+                                <td>Ape Coin</td>
+                                <td>APE</td>
+                                <td>▼ -4.63%</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="assets/Group-2.png" alt=""></td>
+                                <td>Hedra</td>
+                                <td>HBAR</td>
+                                <td>▲ 854.33%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="assets/Group-3.png" alt=""></td>
+                                <td>Saitama Inu</td>
+                                <td>SAT</td>
+                                <td>▲ 88.33%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="assets/Group.png" alt=""></td>
+                                <td>FlexGold</td>
+                                <td>FLGE</td>
+                                <td> ▼ -24.63%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="assets/Vector.png" alt=""></td>
+                                <td>Etherium</td>
+                                <td>ETH</td>
+                                <td>▲ 108.33%</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-center my-3">
+                        <a href="#">More <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto">
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="assets/presale.png" alt="">
+                        <h3>
+                            Presale
+                        </h3>
+                    </div>
+                    <div class="mt-3">
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="assets/Group-1.png" alt=""></td>
+                                <td>Ape Coin</td>
+                                <td>APE</td>
+                                <td> in 13 days</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="assets/Group-2.png" alt=""></td>
+                                <td>Hedra</td>
+                                <td>HBAR</td>
+                                <td>Tomorrow</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="assets/Group-3.png" alt=""></td>
+                                <td>Saitama Inu</td>
+                                <td>SAT</td>
+                                <td> in 5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="assets/Group.png" alt=""></td>
+                                <td>FlexGold</td>
+                                <td>FLGE</td>
+                                <td> in 26 days</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">5</a> </td>
+                                <td><a href=""><img src="assets/Vector.png" alt=""></a> </td>
+                                <td>Etherium</td>
+                                <td>ETH</td>
+                                <td>in 2 days</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-center my-3">
+                        <a href="#">More <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Advertisment gif-->
+    <div class="container d-flex justify-content-center my-5">
+        <div class="">
+            <img src="assets/ad2.gif" class="img-fluid" alt="Animated gif of advertisment">
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="d-flex flex-row justify-content-between text-center">
+            <h3 class="h3">Promoted</h3>
+            <a href="submit.html">Promote your coin here</a>
+        </div>
+        <div>
+            <div class="table-background">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th></th>
+                            <th>#</th>
+                            <th colspan="3">Name</th>
+                            <th>Price ▼</th>
+                            <th>Market Cap ▼</th>
+                            <th>Change 24h ▼</th>
+                            <th>Launch ▼</th>
+                            <th>Chain ▼</th>
+                            <th>Votes ▼</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-bs-toggle="tooltip" title="Add to watchlist"><img
+                                        onclick="src='assets/Star 2.svg'" src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>2</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>3</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>4</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>5</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hero my-5 py-5">
+        <h1>
+            Find the best new cryptocurrency projects
+        </h1>
+        <p>
+            Did you ever wonder where people find the best new cryptocurrency projects, coins and tokens like Doge and
+            Shiba Inu? They use websites like <a href="#"> MoonshotCoins.net</a>. Cryptocurrency projects are listed
+            here before
+            CoinMarketCap, CoinGecko and major exchanges. Find the best crypto moonshots on our website.<br><br>
+            However: before investing always do your own research (DYOR)! Listing on <a href="#"> MoonshotCoins.net</a>
+            does NOT mean we
+            endorse the project, they could be scams. Be careful with your investments.
+        </p>
+    </div>
+
+    <div class="container mb-5">
+        <h3 class="h3">New Listed</h3>
+        <div class="d-flex flex-row justify-content-between text-center">
+            <div class="filter-table d-flex flex-row">
+                <div class="d-flex flex-row text-center align-items-center">
+                    <span>Blockchain</span>
+                    <div class="filter">
+                        <span>ALL <i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row text-center align-items-center">
+                    <span>Show rows</span>
+                    <div class="filter">
+                        <span>10 <i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-nowrap ">
+                <a href="submit.html">Submit your coin here!</a>
+            </div>
+        </div>
+        <div>
+            <div class="table-background">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th></th>
+                            <th>#</th>
+                            <th colspan="3">Name</th>
+                            <th>Price ▼</th>
+                            <th>Market Cap ▼</th>
+                            <th>Change 24h ▼</th>
+                            <th>Launch ▼</th>
+                            <th>Chain ▼</th>
+                            <th>Votes ▼</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" title="Add to watchlist" onclick="filled">
+                                <img id="filled-img" src="assets/Star 1.svg" alt="">
+                            </td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>2</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>3</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>1324</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>4</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>5</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-bs-toggle="tooltip" title="Add to watchlist"><img
+                                        onclick="src='assets/Star 2.svg'" src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-bs-toggle="tooltip" title="Add to watchlist"><img onclick="filled"
+                                        id="filled-img" src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-bs-toggle="tooltip" title="Add to watchlist"><img onclick="filled"
+                                        id="filled-img" src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-bs-toggle="tooltip" title="Add to watchlist"><img onclick="filled"
+                                        id="filled-img" src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-bs-toggle="tooltip" title="Add to watchlist"><img onclick="filled"
+                                        id="filled-img" src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" data-bs-toggle="tooltip" title="Add to watchlist"><img
+                                        onclick="src='assets/Star 2.svg'" src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li><a href="#"><i class="fa-solid fa-lg fa-chevron-left"></i></a></li>
+                    <li class="active-p"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#"><i class="fa-solid fa-lg fa-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="kgba-112">
+        <div class="container my-5">
+            <div class="row center">
+                <div class="col-sm-12 col-lg-6">
+                    <div>
+                        <div class="pt-2">
+                            <h2>
+                                Trying to get you coin <span class="bold">Exposure?</span>
+                            </h2>
+                            <p>List your favorite coin now and use our big community on <span>Twitter</span> and
+                                <span>Telegram</span> to showcase why your crypto projects is worth it!
+                                Get your community to vote for your coin and gain exposure.
+                            </p>
+                            <div>
+                                <button class="btn btn-submit">
+                                    <a href="">Submit Coin</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line d-none d-lg-block"></div>
+                <div class="line-v d-lg-none"></div>
+                <div class="col-sm-12 col-lg-5 mt-5" >
+                    <div class="">
+                        <div class="d-flex flex-column flex-lg-row ">
+                            <div class="socials ">
+                                <h6>Join us on <span>Telegram</span></h6>
+                                <p><span>234,554</span> Members</p>
+                                <div>
+                                    <button>
+                                        <a href=""><i class="fa-brands fa-telegram fa-xl"></i> Join</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="socials mt-5 mt-lg-0">
+                                <h6>Follow us on <span>Twitter</span></h6>
+                                <p><span>25,563</span> Followers</p>
+                                <div>
+                                    <button>
+                                        <a href=""><i class="fa-brands fa-twitter"></i> Follow</i></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bg-white">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="d-md-flex  justify-content-between p-0 ">
+                        <div >
+                            <a  href=""><img class="center-img" src="assets/logo.png" alt="Moonshot Coins"></a>
+                        </div>
+                        <div >
+                            <nav class="nav nav1 ">
+                                <a class="nav-link ps-0" aria-current="page" href="#">Submit Coin</a>
+                                <a class="nav-link" href="#">Update Request</a>
+                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link ps-0 pe-0" href="#">Advertise</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="d-flex  justify-content-between my-4 social-footer p-0">
+                        <div>
+                            <span>Find the new big thing project</span>
+                        </div>
+                        <div>
+                            <ul class="nav ">
+                                <a class="nav-link " href="#"><i class="fa-brands fa-color fa-twitter fa-2xl"></i></a>
+                                <a class="nav-link pe-0" href="#"><i class="fa-brands fa-color fa-telegram fa-2xl"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line-footer"></div>
+                    <div class="d-flex flex-wrap justify-content-between cr-footer">
+                        <div class=" text-nowrap ">
+                            <span>© 2022 MoonshotCoins. All rights reserved</span>
+                        </div>
+                        <div class="">
+                            <nav class="nav justify-content-center">
+                                <a class="nav-link pt-0 ps-0" aria-current="page" href="#">Privacy Policy</a>
+                                <a class="nav-link pt-0" href="#">Terms & Conditions</a>
+                                <a class="nav-link pe-0 pt-0"  href="#">Cookie Statement</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e2d92bc793.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

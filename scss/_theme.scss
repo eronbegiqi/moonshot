@@ -1,0 +1,25 @@
+//Colors
+
+$accent:#2E4FCC;
+$accentHover: #375FF5;
+$black:  #1A1C1E;
+$red: #FF0000;
+$green: #01B230;
+$grayish: #58667E;
+$gray: #E2E4E7;
+$txtHolder:#8D8D8D;
+$graytable: #686868;
+$white: #FAFAFA;
+
+// Font size
+
+$small:12px;
+$medium:17px;
+$big:26px;
+
+//mixins
+
+@mixin mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
