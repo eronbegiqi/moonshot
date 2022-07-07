@@ -1,0 +1,233 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonshot Coins</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <!-- Top prices bar-->
+            <div class=" border-bottom border-gray  py-2 ">
+                <div class="container d-flex justify-content-between">
+                    <div class="topbar d-lg-block overflow-auto">
+                        <span><i class="fa-solid  fa-gas-pump"></i> ETH Gas: <a href="#" id="ethe-gas-standard"> Gwei <i
+                                    class="fa-solid  fa-angle-down"></i></a></span>
+                        <span> Etherium: <a href="#">$ 4,624.84</a></span>
+                        <span> Binance Chain: <a href="#">$ 458.74</a></span>
+                        <span> Matic: <a href="#">$ 158.74</a></span>
+                        <span> Fantom: <a href="#">$ 138.74</a></span>
+                    </div>
+                    <div class="d-none d-lg-block topbar-r">
+                        <!-- languange -->
+                        <div class="topbar-rt">
+                            <button class="dropdown-toggle border-0 bg-transparent" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Espaniol</a></li>
+                            </ul>
+                        </div>
+                        <!-- Light/Dark theme toggler-->
+                        <div class="topbar-rt">
+                            <span>Dark <i class="fa-solid fa-moon"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu navbar -->
+            <div class="border-bottom border-gray py-3">
+                <div class="container d-flex  justify-content-between">
+                    <div class="d-flex flex-row align-items-center nav-bar">
+                        <a href="index.html" class="mx-0">
+                            <img src="assets/logo.png" alt="Logo">
+                        </a>
+                        <div class="d-none d-lg-block ms-3">
+                            <a href="#">Contact Us</a>
+                            <a href="#">Advertising</a>
+                            <a href="#">Submit Coin</a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="form d-none d-lg-block">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="form-control form-input" placeholder="Search coins...">
+                        </div>
+                        <div class="align-items-center log-in d-none d-lg-flex">
+                            <div class="">
+                                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#login"
+                                    class="me-4 ms-1">Log in</a>
+                                <button class="text-light" type="button" data-bs-toggle="modal" data-bs-target="#signup">
+                                    <a href="#">Sign up</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Login Modal -->
+                    <div class="modal  fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content1 ">
+                                <div class="m-4">
+                                    <div>
+                                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        <h5 id="login">Log In</h5>
+                                        <div class="mb-4 desc-form">
+                                            <span>New to MoonshotCoins? </span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signup">Create an account</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-login ">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="Email1" class="form-label1">Email address</label>
+                                                <input type="email" class="form-control1" id="Email1"
+                                                    placeholder="Enter your email address..."
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="exampleInputPassword1" class="form-label1">Password</label>
+                                                <label for="exampleInputPassword1" class="form-label1 float-end"><a
+                                                        href="#">Forgot password?</a></label>
+                                                <input type="password" class="form-control1" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="d-grid text-center login-btn">
+                                                <button type="submit" class="btn py-2">Log In</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sign Up modal -->
+                    <!-- Login Modal -->
+                    <div class="modal  fade" id="signup" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content1 ">
+                                <div class="m-4">
+                                    <div>
+                                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        <h5 id="login">Create an account</h5>
+                                        <div class="mb-5 desc-form">
+                                            <span>Gain access to additional features such as Watchlist tracking.
+                                                Already have an account? </span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#login">Log In</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-login ">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="Email1" class="form-label1">Email address</label>
+                                                <input type="email" class="form-control1" id="Email1"
+                                                    placeholder="Enter your email address..."
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="exampleInputPassword1" class="form-label1">Password</label>
+                                                <label for="exampleInputPassword1" class="form-label1 float-end"><a
+                                                        href="#">Forgot password?</a></label>
+                                                <input type="password" class="form-control1" id="exampleInputPassword1">
+                                                <div id="emailHelp" >Password should contain both letter and number, with minimum length  of <br>8 characters</div>
+                                            </div>
+                                            <div class="d-grid text-center login-btn">
+                                                <button type="submit" class="btn py-2">Create an account</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="mt-5 text-center modal-footer1">
+                                        <span>By proceeding, you agree to MoonshotCoins’s <br> <a href="$">Terms of Use</a> & <a href="#">Privacy Policy</a> .</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Icon -->
+                    <div class="d-flex align-items-center d-lg-none">
+                        <button id="menu-btn" class="hamburger ">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- Mobile Menu -->
+
+    </header>
+    <!-- Header -->
+
+    <!-- Advertisment gif-->
+    <div class="container  d-flex justify-content-center my-5">
+        <div class="">
+            <img src="assets/ad1.gif" class="img-fluid" alt="Animated gif of advertisment">
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="bg-white">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="d-md-flex  justify-content-between p-0 ">
+                        <div>
+                            <a href=""><img class="center-img" src="assets/logo.png" alt="Moonshot Coins"></a>
+                        </div>
+                        <div>
+                            <nav class="nav nav1 ">
+                                <a class="nav-link ps-0" aria-current="page" href="#">Submit Coin</a>
+                                <a class="nav-link" href="#">Update Request</a>
+                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link ps-0 pe-0" href="#">Advertise</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="d-flex  justify-content-between my-4 social-footer p-0">
+                        <div>
+                            <span>Find the new big thing project</span>
+                        </div>
+                        <div>
+                            <ul class="nav ">
+                                <a class="nav-link " href="#"><i class="fa-brands fa-color fa-twitter fa-2xl"></i></a>
+                                <a class="nav-link pe-0" href="#"><i
+                                        class="fa-brands fa-color fa-telegram fa-2xl"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line-footer"></div>
+                    <div class="d-flex flex-wrap justify-content-between cr-footer">
+                        <div class=" text-nowrap ">
+                            <span>© 2022 MoonshotCoins. All rights reserved</span>
+                        </div>
+                        <div class="">
+                            <nav class="nav justify-content-center">
+                                <a class="nav-link pt-0 ps-0" aria-current="page" href="#">Privacy Policy</a>
+                                <a class="nav-link pt-0" href="#">Terms & Conditions</a>
+                                <a class="nav-link pe-0 pt-0" href="#">Cookie Statement</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e2d92bc793.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
