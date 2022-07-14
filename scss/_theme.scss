@@ -11,15 +11,66 @@ $txtHolder:#8D8D8D;
 $graytable: #686868;
 $white: #FAFAFA;
 
+
+.headertxt{
+  color:$grayish;
+}
+.txtHolder{
+  color: $txtHolder;
+}
+.accent{
+  color: $accent;
+}
+.black{
+  color: $black !important;
+  font-weight: 500;
+}
 // Font size
 
 $small:12px;
 $medium:17px;
 $big:26px;
 
+
+.md-font{
+  font-size: $medium;
+}
 //mixins
 
 @mixin mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin btn-coin {
+    background: $accent;
+    border-radius: 7px;
+    border:none;
+}
+@mixin btn-a{
+  color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+}
+
+//Scrollbar
+
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #acacac;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: $accentHover;    /* color of the scroll thumb */
+    border-radius: 7px;       /* roundness of the scroll thumb */
+  }
+  
+//Btn
+.btn-0{
+  border:none;
+  background: none;
+  font-size: 1.3em;
 }

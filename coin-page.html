@@ -64,7 +64,8 @@
                             <div class="">
                                 <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#login"
                                     class="me-4 ms-1">Log in</a>
-                                <button class="text-light" type="button" data-bs-toggle="modal" data-bs-target="#signup">
+                                <button class="text-light" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#signup">
                                     <a href="#">Sign up</a>
                                 </button>
                             </div>
@@ -82,7 +83,8 @@
                                             aria-label="Close"></button>
                                         <h5 id="login">Log In</h5>
                                         <div class="mb-4 desc-form">
-                                            <span>New to MoonshotCoins? </span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signup">Create an account</a>
+                                            <span>New to MoonshotCoins? </span><a href="#" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#signup">Create an account</a>
                                         </div>
                                     </div>
                                     <div class="form-login ">
@@ -91,13 +93,13 @@
                                                 <label for="Email1" class="form-label1">Email address</label>
                                                 <input type="email" class="form-control1" id="Email1"
                                                     placeholder="Enter your email address..."
-                                                    aria-describedby="emailHelp">
+                                                    aria-describedby="emailHelp" required>
                                             </div>
                                             <div class="mb-4">
-                                                <label for="exampleInputPassword1" class="form-label1">Password</label>
-                                                <label for="exampleInputPassword1" class="form-label1 float-end"><a
-                                                        href="#">Forgot password?</a></label>
-                                                <input type="password" class="form-control1" id="exampleInputPassword1">
+                                                <label for="Password1" class="form-label1">Password</label>
+                                                <label for="Password1" class="form-label1 float-end"><a href="#">Forgot
+                                                        password?</a></label>
+                                                <input type="password" class="form-control1" id="Password1" required>
                                             </div>
                                             <div class="d-grid text-center login-btn">
                                                 <button type="submit" class="btn py-2">Log In</button>
@@ -109,6 +111,8 @@
                         </div>
                     </div>
                     <!-- Sign Up modal -->
+
+
                     <!-- Login Modal -->
                     <div class="modal  fade" id="signup" tabindex="-1" aria-labelledby="login" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -120,23 +124,27 @@
                                         <h5 id="login">Create an account</h5>
                                         <div class="mb-5 desc-form">
                                             <span>Gain access to additional features such as Watchlist tracking.
-                                                Already have an account? </span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#login">Log In</a>
+                                                Already have an account? </span><a href="#" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#login">Log In</a>
                                         </div>
                                     </div>
                                     <div class="form-login ">
-                                        <form>
+                                        <form name="signup" action="#">
                                             <div class="mb-3">
-                                                <label for="Email1" class="form-label1">Email address</label>
-                                                <input type="email" class="form-control1" id="Email1"
+                                                <label for="email2" class="form-label1">Email address</label>
+                                                <input type="email" name="validate"
+                                                    onfocusout="ValidateEmail(document.signup.email2)"
+                                                    class="form-control1" id="email2"
                                                     placeholder="Enter your email address..."
-                                                    aria-describedby="emailHelp">
+                                                    aria-describedby="emailHelp" required>
                                             </div>
                                             <div class="mb-4">
-                                                <label for="exampleInputPassword1" class="form-label1">Password</label>
-                                                <label for="exampleInputPassword1" class="form-label1 float-end"><a
-                                                        href="#">Forgot password?</a></label>
-                                                <input type="password" class="form-control1" id="exampleInputPassword1">
-                                                <div id="emailHelp" >Password should contain both letter and number, with minimum length  of <br>8 characters</div>
+                                                <label for="Password2" class="form-label1">Password</label>
+                                                <label for="Password2" class="form-label1 float-end"><a href="#">Forgot
+                                                        password?</a></label>
+                                                <input type="password" class="form-control1" id="Password2" required>
+                                                <div id="emailHelp">Password should contain both letter and number, with
+                                                    minimum length of <br>8 characters</div>
                                             </div>
                                             <div class="d-grid text-center login-btn">
                                                 <button type="submit" class="btn py-2">Create an account</button>
@@ -144,7 +152,8 @@
                                         </form>
                                     </div>
                                     <div class="mt-5 text-center modal-footer1">
-                                        <span>By proceeding, you agree to MoonshotCoins’s <br> <a href="$">Terms of Use</a> & <a href="#">Privacy Policy</a> .</span>
+                                        <span>By proceeding, you agree to MoonshotCoins’s <br> <a href="$">Terms of
+                                                Use</a> & <a href="#">Privacy Policy</a> .</span>
                                     </div>
                                 </div>
                             </div>
@@ -171,32 +180,216 @@
     <!-- Advertisment gif-->
     <div class="container  d-flex justify-content-center my-5">
         <div class="">
-            <img src="assets/ad1.gif" class="img-fluid" alt="Animated gif of advertisment">
+            <img src="assets/ad1.gif" class="img-fluid" title="Sponsored ad" alt="Animated gif of advertisment">
         </div>
 
     </div>
 
     <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bc">
-                  <li class="breadcrumb-item1"><a href="#">Home</a></li>
-                  <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
-                  <li class="breadcrumb-item1"><a href="#">New Listing</a></li>
-                  <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
-                  <li class="breadcrumb-item1 active" aria-current="page">Ape Coin</li>
-                </ol>
-              </nav>
-              <div class="float-end">
-                <span >Added: February 20th 2022</span>
-            </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bc">
+                <li class="breadcrumb-item1"><a href="#">Home</a></li>
+                <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
+                <li class="breadcrumb-item1"><a href="#">New Listing</a></li>
+                <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
+                <li class="breadcrumb-item1 active" aria-current="page">Ape Coin</li>
+            </ol>
+        </nav>
+
     </div>
+    <div class="container">
+        <div class="d-flex justify-content-lg-end txtHolder p-0 mb-3 m-md-0">
+            <span>Added: February 20th 2022</span>
+        </div>
+    </div>
+
+
     <div class="container">
         <div>
-            s
+            <div class="row gap-3">
+                <div class="card1">
+                    <div class="p-4 row">
+                        <div class="coin-img col">
+                            <img src="assets/Apecoin.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col ">
+                            <div class="info-title d-flex justify-content-between align-items-center">
+                                <div class="align-self-center ">
+                                    <p class="mb-0">On <span class="accent">189,729</span> watchlists</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img src="assets/Star 1.svg" class="w-85" alt="">
+                                    </div>
+                                    <div class=" ms-2 headertxt">
+                                        <span>Add to watchlist</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="my-3">
+                                    <h2 class="mb-0">
+                                        Ape Coin
+                                    </h2>
+                                    <div>
+
+                                    </div>
+                                    <div class="headertxt ">
+                                        <span class="txtHolder ">BSCContract Address: </span>
+                                        <span id="copytxt"
+                                            class="text-break mb-3">0x333FD139cAeF6Aa31056cC905987b77B1044d259</span>
+                                        <button onclick="copyToClipboard('copytxt')" class="btn-0 ms-2">
+                                            <i class="fa-solid fa-paste accent "></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex gap-3 mt-4">
+
+                                        <button type="button" class="btn btn-coin">
+                                            <a href="#"><i class="fa-brands fa-telegram me-1 fa-xl"></i> 7k</a>
+                                        </button>
+                                        <button type="button" class="btn btn-coin">
+                                            <a href="#"><i class="fa-brands fa-twitter me-1 fa-xl"></i> 7k</a>
+                                        </button>
+                                        <button type="button" class="btn btn-coin">
+                                            <a href="#"><i class="fa-solid fa-globe me-1 "></i> GO</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 flex-fill">
+                    <div class="px-3 py-3 row ">
+                        <div class="col ">
+                            <div>
+                                <h2 class="mb-3">
+                                    Coin Information
+                                </h2>
+                                <div>
+                                    <div class="d-flex justify-content-between coin-info">
+                                        <span>KYC Verified:</span>
+                                        <span>Not KYC Verified</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between coin-info ">
+                                        <span>Listing Status:</span>
+                                        <div>
+                                            <span class="black">500 / 500</span>
+                                            <div class="badge btn-primary mb-1">
+                                                <span class="text-white"> LISTED</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between coin-info">
+                                        <span>Launch:</span>
+                                        <span>March 22 2022</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between coin-info">
+                                        <span>Votes:</span>
+                                        <span>748214</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between coin-info border-0">
+                                        <span>Votes Today:</span>
+                                        <span class="plusmin">10140</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 mt-4">
+                                    <button type="button" class="btn btn-coin w-100">
+                                        <a href="#">VOTE FOR Ape Coin</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 flex-grow-1">
+                    <div class="px-3 py-3 row ">
+                        <div class="col ">
+                            <div>
+                                <h2 class="mb-3">
+                                    Charts & Prices
+                                </h2>
+                                <div class="d-flex flex-row gap-3">
+                                    <div class="mt-4 col">
+
+                                        <button type="button" class="btn charts-btn">
+                                            <img src="assets/poocoin512.png" alt="">
+                                            <a href="#">Poocoin</a>
+                                        </button>
+                                    </div>
+                                    <div class="mt-4 col">
+                                        <button type="button" class="btn charts-btn">
+                                            <img src="assets/coinbrain.ico" alt="">
+                                            <a href="#">Coin Brian</a>
+                                        </button>
+                                    </div>
+                                    <div class="mt-4 col">
+                                        <button type="button" class="btn charts-btn">
+                                            <img src="assets/favicon-32x32.png" alt="">
+                                            <a href="#">Bogged Finance</a>
+                                        </button>
+                                    </div>
+                                    <div class="mt-4 col">
+                                        <button type="button" class="btn charts-btn">
+                                            <img src="assets/geckoterminal.png" alt="">
+                                            <a href="#">GeckoTerminal</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1 flex-fill">
+                    <div class="px-3 py-3 row ">
+                        <div class="col ">
+                            <div>
+                                <h2 class="mb-3">
+                                    Coin Market Data
+                                </h2>
+                                <div>
+                                    <div class="d-flex justify-content-between coin-info">
+                                        <span>Price (USD):</span>
+                                        <span>$ 277.0200</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between coin-info ">
+                                        <span>Price Change (24h):</span>
+                                        <span class="plusmin">10140</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between coin-info">
+                                        <span>Marketcap:</span>
+                                        <span>$ 58,665,555</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between coin-info">
+                                        <span>Total Liquidity:</span>
+                                        <span>$ 1,873,472</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 mt-4">
+                                    <button type="button" class="btn btn-coin w-100">
+                                        <a href="#">VOTE FOR Ape Coin</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </div>
 
+    </div>
 
+    <div class="container">
+        <div class="">
+            <div class="">
+
+            </div>
+        </div>
+
+    </div>
 
 
 

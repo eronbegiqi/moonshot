@@ -1,7 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../scss/_theme.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800&display=swap");
-
 body {
   background-color: #fafafa;
   font-family: "Inter", sans-serif;
@@ -12,6 +11,12 @@ body {
   }
 }
 
+td.negative {
+  color: red;
+}
+td.positive {
+  color: green;
+}
 .container {
   width: 90%;
 }
@@ -28,13 +33,14 @@ body {
   }
 }
 
-.topbar + div {
+.topbar-r,
+button {
   font-size: $small;
   color: $black;
   font-weight: 600;
-
-  span {
+  .topbar-rt {
     margin-left: 20px;
+    display: inline;
   }
 }
 
@@ -225,14 +231,19 @@ body {
   }
 }
 .negative {
+  color: $red !important;
+
   &::before {
-    content: "▼";
+    content: "▼ ";
+    font-size: 14px;
     color: $red;
   }
 }
 .positive {
+  color: $green !important;
   &::before {
-    content: "▲";
+    content: "▲ ";
+    font-size: 14px;
     color: $green;
   }
 }
@@ -242,7 +253,7 @@ body {
   box-shadow: 0px 14.5186px 40.8754px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   border: none;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -254,15 +265,21 @@ body {
     color: $grayish;
     font-weight: 600;
     border-bottom: 0.5px solid rgba(103, 103, 103, 0.3);
+    &:nth-child(n + 4):nth-child(-n + 9) {
+      text-align: right;
+    }
   }
   tr {
-    border-bottom: 0.5px solid rgba(103, 103, 103, 0.3);
+    border-bottom: 0.5px solid rgba(218, 218, 218, 0.3);
     height: 60px;
     vertical-align: middle;
     font-size: 15px;
     white-space: nowrap;
     &::-webkit-scrollbar {
       display: none;
+    }
+    :nth-child(n + 6):nth-child(-n + 9) {
+      text-align: right;
     }
     td:first-child {
       text-align: center;
@@ -274,6 +291,10 @@ body {
       color: $txtHolder;
     }
     td:nth-child(6) {
+      text-align: center;
+      font-weight: 400;
+    }
+    td:nth-child(n + 10) {
       text-align: center;
     }
     &:last-child {
@@ -370,17 +391,14 @@ body {
     }
   }
   .btn-submit {
-    background: $accent;
-    border-radius: 7px;
+    @include btn-coin;
     padding: 10px 10px;
     margin-top: 18px;
     &:hover {
       background: $accentHover;
     }
     a {
-      color: #ffffff;
-      font-size: 15px;
-      font-weight: 500;
+      @include btn-a;
     }
   }
   .bold {
@@ -428,11 +446,10 @@ body {
 
 footer {
   @include media-breakpoint-down(sm) {
-    .center-img{
-    display: block;
-    @include mx-auto;
+    .center-img {
+      display: block;
+      @include mx-auto;
     }
-
   }
   .line-footer {
     border: 0.4px solid $gray;
@@ -474,16 +491,186 @@ footer {
       font-weight: 600;
     }
     @include media-breakpoint-down(sm) {
-      &{
+      & {
         flex-direction: column;
         margin-top: 15px;
         align-items: center;
-        .nav-link{
+        .nav-link {
           padding: 5px 0px;
-          
         }
-        
       }
     }
+  }
+}
+
+.modal {
+  .modal-content1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 10px;
+    outline: 0;
+    .desc-form {
+      color: $grayish;
+      font-size: 14px;
+    }
+    .modal-footer1 {
+      font-size: 11px;
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+  h5 {
+    font-weight: 600;
+  }
+
+  a {
+    font-size: 14px;
+  }
+  .form-login {
+    .email-nv {
+      color: $red;
+      font-size: 13px;
+    }
+    #emailHelp {
+      margin-top: 5px;
+      font-size: 11px;
+      font-weight: 400;
+      color: $grayish;
+    }
+    input::placeholder {
+      color: $txtHolder;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .login-btn {
+      background: #e2e4e7;
+      &:hover {
+        background: #bbbdbe;
+      }
+      border-radius: 7px;
+      button {
+        color: $graytable;
+      }
+    }
+    .form-label1 {
+      font-size: 13px;
+      font-weight: 600;
+      color: $black;
+      margin-bottom: 5px;
+      a {
+        color: $grayish;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    .form-control1 {
+      display: block;
+      width: 100%;
+      padding: 0.775rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #58667e;
+      opacity: 0.6;
+      border-radius: 7px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+  }
+}
+
+.bc {
+  a,
+  i {
+    color: $grayish;
+    font-weight: 600;
+  }
+  li {
+    padding-right: 1rem;
+  }
+  .breadcrumb-item1 {
+    box-sizing: border-box;
+    float: left;
+    color: #6c757d;
+  }
+}
+
+.info-title {
+  font-size: 13px;
+  color: $grayish;
+  font-weight: 500;
+}
+.coin-img {
+  max-width: 130px;
+  height: auto;
+  img {
+    width: 150px;
+    height: auto;
+  }
+}
+.card1 {
+  background: #ffffff;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0px 14.5186px 40.8754pxrgba (0, 0, 0, 0.08);
+  border-radius: 7px;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+
+  .btn-coin {
+    @include btn-coin;
+    min-width: 76px;
+    min-height: 36px;
+
+    &:hover {
+      background: $accentHover;
+    }
+    a {
+      @include btn-a;
+    }
+  }
+  .charts-btn{
+    border: 1px solid #2E4FCC;
+    border-radius: 5px;
+    background-color: none;
+    width: 199px;
+    height: 55px;
+    align-items: center;
+    text-align: center;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  .coin-info {
+    margin-bottom: 15px;
+    border-bottom: 0.5px solid rgba(211, 211, 211, 0.749);
+    font-size: 14px;
+    span:first-child {
+      color: $txtHolder;
+      font-weight: 300;
+    }
+    span:nth-child(2) {
+      color: $black;
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+    
   }
 }
