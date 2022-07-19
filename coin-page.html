@@ -185,213 +185,366 @@
 
     </div>
 
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bc">
-                <li class="breadcrumb-item1"><a href="#">Home</a></li>
-                <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
-                <li class="breadcrumb-item1"><a href="#">New Listing</a></li>
-                <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
-                <li class="breadcrumb-item1 active" aria-current="page">Ape Coin</li>
-            </ol>
-        </nav>
-
-    </div>
-    <div class="container">
-        <div class="d-flex justify-content-lg-end txtHolder p-0 mb-3 m-md-0">
-            <span>Added: February 20th 2022</span>
+    <div class="container px-0">
+        <div class="d-flex flex-column flex-sm-row">
+            <div class="col ">
+                <nav aria-label="breadcrumb" >
+                    <ol class="breadcrumb bc">
+                        <li class="breadcrumb-item1"><a href="#">Home</a></li>
+                        <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="breadcrumb-item1"><a href="#">New Listing</a></li>
+                        <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="breadcrumb-item1 active" aria-current="page">Ape Coin</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="d-flex justify-content-lg-end col txtHolder p-0 ">
+                <span>Added: February 20th 2022</span>
+            </div>
         </div>
+        
     </div>
-
-
     <div class="container">
-        <div>
-            <div class="row gap-3">
-                <div class="card1">
-                    <div class="p-4 row">
-                        <div class="coin-img col">
-                            <img src="assets/Apecoin.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col ">
-                            <div class="info-title d-flex justify-content-between align-items-center">
-                                <div class="align-self-center ">
-                                    <p class="mb-0">On <span class="accent">189,729</span> watchlists</p>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <img src="assets/Star 1.svg" class="w-85" alt="">
-                                    </div>
-                                    <div class=" ms-2 headertxt">
-                                        <span>Add to watchlist</span>
-                                    </div>
-                                </div>
+        
+    </div>
+    <div class="container ">
+        <div class="row gap-3">
+            <div class="col col-sm-12 col-lg-8 w-btn">
+                <div class="row d-flex justify-content-center gap-3">
+                    <div class="card1  col my-0 ">
+                        <div class="p-4 row">
+                            <div class="coin-img col d-none d-sm-block">
+                                <img src="assets/Apecoin.png" class="img-fluid" alt="">
                             </div>
-                            <div>
-                                <div class="my-3">
-                                    <h2 class="mb-0">
-                                        Ape Coin
-                                    </h2>
-                                    <div>
-
-                                    </div>
-                                    <div class="headertxt ">
-                                        <span class="txtHolder ">BSCContract Address: </span>
-                                        <span id="copytxt"
-                                            class="text-break mb-3">0x333FD139cAeF6Aa31056cC905987b77B1044d259</span>
-                                        <button onclick="copyToClipboard('copytxt')" class="btn-0 ms-2">
-                                            <i class="fa-solid fa-paste accent "></i>
-                                        </button>
-                                    </div>
-                                    <div class="d-flex gap-3 mt-4">
-
-                                        <button type="button" class="btn btn-coin">
-                                            <a href="#"><i class="fa-brands fa-telegram me-1 fa-xl"></i> 7k</a>
-                                        </button>
-                                        <button type="button" class="btn btn-coin">
-                                            <a href="#"><i class="fa-brands fa-twitter me-1 fa-xl"></i> 7k</a>
-                                        </button>
-                                        <button type="button" class="btn btn-coin">
-                                            <a href="#"><i class="fa-solid fa-globe me-1 "></i> GO</a>
-                                        </button>
-                                    </div>
+                            <div class="col row">
+                                <div class="coin-img col d-block d-sm-none">
+                                    <img src="assets/Apecoin.png" class="img-fluid" alt="">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1 flex-fill">
-                    <div class="px-3 py-3 row ">
-                        <div class="col ">
-                            <div>
-                                <h2 class="mb-3">
-                                    Coin Information
-                                </h2>
-                                <div>
-                                    <div class="d-flex justify-content-between coin-info">
-                                        <span>KYC Verified:</span>
-                                        <span>Not KYC Verified</span>
+                                <div class="info-title d-flex justify-content-between align-items-center col">
+                                    <div class="align-self-center ">
+                                        <p class="mb-0">On <span class="accent">189,729</span> watchlists</p>
                                     </div>
-                                    <div class="d-flex justify-content-between coin-info ">
-                                        <span>Listing Status:</span>
+                                    <div class="d-flex align-items-center">
                                         <div>
-                                            <span class="black">500 / 500</span>
-                                            <div class="badge btn-primary mb-1">
-                                                <span class="text-white"> LISTED</span>
-                                            </div>
+                                            <img src="assets/Star 1.svg" class="w-85" alt="">
+                                        </div>
+                                        <div class=" ms-2 headertxt">
+                                            <span>Add to watchlist</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-between coin-info">
-                                        <span>Launch:</span>
-                                        <span>March 22 2022</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between coin-info">
-                                        <span>Votes:</span>
-                                        <span>748214</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between coin-info border-0">
-                                        <span>Votes Today:</span>
-                                        <span class="plusmin">10140</span>
-                                    </div>
                                 </div>
-                                <div class="d-flex gap-3 mt-4">
-                                    <button type="button" class="btn btn-coin w-100">
-                                        <a href="#">VOTE FOR Ape Coin</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1 flex-grow-1">
-                    <div class="px-3 py-3 row ">
-                        <div class="col ">
-                            <div>
-                                <h2 class="mb-3">
-                                    Charts & Prices
-                                </h2>
-                                <div class="d-flex flex-row gap-3">
-                                    <div class="mt-4 col">
-
-                                        <button type="button" class="btn charts-btn">
-                                            <img src="assets/poocoin512.png" alt="">
-                                            <a href="#">Poocoin</a>
-                                        </button>
-                                    </div>
-                                    <div class="mt-4 col">
-                                        <button type="button" class="btn charts-btn">
-                                            <img src="assets/coinbrain.ico" alt="">
-                                            <a href="#">Coin Brian</a>
-                                        </button>
-                                    </div>
-                                    <div class="mt-4 col">
-                                        <button type="button" class="btn charts-btn">
-                                            <img src="assets/favicon-32x32.png" alt="">
-                                            <a href="#">Bogged Finance</a>
-                                        </button>
-                                    </div>
-                                    <div class="mt-4 col">
-                                        <button type="button" class="btn charts-btn">
-                                            <img src="assets/geckoterminal.png" alt="">
-                                            <a href="#">GeckoTerminal</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1 flex-fill">
-                    <div class="px-3 py-3 row ">
-                        <div class="col ">
-                            <div>
-                                <h2 class="mb-3">
-                                    Coin Market Data
-                                </h2>
                                 <div>
-                                    <div class="d-flex justify-content-between coin-info">
-                                        <span>Price (USD):</span>
-                                        <span>$ 277.0200</span>
+                                    <div class="my-3">
+                                        <h2 class="mb-0">
+                                            Ape Coin
+                                        </h2>
+                                        <div>
+
+                                        </div>
+                                        <div class="headertxt ">
+                                            <span class="txtHolder ">BSCContract Address: </span>
+                                            <span id="copytxt"
+                                                class="text-break mb-3">0x333FD139cAeF6Aa31056cC905987b77B1044d259</span>
+                                            <button onclick="copyToClipboard('copytxt')" class="btn-0 ms-2">
+                                                <i class="fa-solid fa-paste accent "></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex gap-3 mt-4">
+
+                                            <button type="button" class="btn btn-coin">
+                                                <a href="#"><i class="fa-brands fa-telegram me-1 fa-xl"></i> 7k</a>
+                                            </button>
+                                            <button type="button" class="btn btn-coin">
+                                                <a href="#"><i class="fa-brands fa-twitter me-1 fa-xl"></i> 7k</a>
+                                            </button>
+                                            <button type="button" class="btn btn-coin">
+                                                <a href="#"><i class="fa-solid fa-globe me-1 "></i> GO</a>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-between coin-info ">
-                                        <span>Price Change (24h):</span>
-                                        <span class="plusmin">10140</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between coin-info">
-                                        <span>Marketcap:</span>
-                                        <span>$ 58,665,555</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between coin-info">
-                                        <span>Total Liquidity:</span>
-                                        <span>$ 1,873,472</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex gap-3 mt-4">
-                                    <button type="button" class="btn btn-coin w-100">
-                                        <a href="#">VOTE FOR Ape Coin</a>
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="card1 my-0 col ">
+                        <div class=" row p-0">
+                            <div class="col mx-2 my-3 p-0">
+                                <div>
+                                    <h2 class="mb-3">
+                                        Charts & Prices
+                                    </h2>
+                                    <div class="row justify-content-center">
+                                        <div class="mt-4 pe-1 col">
+                                            <button type="button" class="btn charts-btn">
+                                                <img src="assets/poocoin512.png" alt="">
+                                                <a href="#">Poocoin</a>
+                                            </button>
+                                        </div>
+                                        <div class="mt-4 pe-1 col">
+                                            <button type="button" class="btn charts-btn">
+                                                <img src="assets/coinbrain.ico" alt="">
+                                                <a href="#">Coin Brian</a>
+                                            </button>
+                                        </div>
+                                        <div class="mt-4 pe-1  col">
+                                            <button type="button" class="btn charts-btn">
+                                                <img src="assets/favicon-32x32.png" alt="">
+                                                <a href="#">Bogged Finance</a>
+                                            </button>
+                                        </div>
+                                        <div class="mt-4 pe-1  col">
+                                            <button type="button" class="btn charts-btn">
+                                                <img src="assets/geckoterminal.png" alt="">
+                                                <a href="#">GeckoTerminal</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container col tradeview-fit">
+                        <div id="tradingview_22b0b"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                            new TradingView.widget(
+                                {
+                                    "autosize": true,
+                                    "symbol": "BINANCE:BTCUSDT",
+                                    "interval": "240",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "dark",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "allow_symbol_change": true,
+                                    "container_id": "tradingview_22b0b"
+                                }
+                            );
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                    <div class="card1 my-0 col p-4 ">
+                        <h2 class="mb-3">
+                            Description
+                        </h2>
+                        <div class="desc-txt text-break">
+                            <p>
+                                FlokiVerse is basically all you need for Metaverse world .Think about token which is Web 3 based  integrated metaverse adaptable Game developement company . Play and earn our FPS Shooter games with your friends. Trade your unique NFTs Game developement company that aiming to provide the best user experiene on metaverse with immersive games. <br>📍XT.COM LISTED : https://www.xt.com/trade/flokiv_usdt <br>📋 Whitepaper : https://flokiversetoken.com/file/WhitePaper.pdf <br>🔒 DxSale Lock : https://dxsale.app/app/v3/dxlockview?id=0&add=0x6B258449E1157c21C5a554c82EE75804d6104Abc&type=lplock&chain=BSC
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-0 p-0 sm-font">
+                        <span class="headertxt">Information incorrect? Please submit an </span>
+                        <a href="#" class="">Update Request!</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="row gap-3">
+                    <div class="card1 side w-100 col my-0">
+                        <div class="px-3 py-3 row ">
+                            <div class="col ">
+                                <div>
+                                    <h2 class="mb-3">
+                                        Coin Information
+                                    </h2>
+                                    <div>
+                                        <div class="d-flex justify-content-between coin-info">
+                                            <span>KYC Verified:</span>
+                                            <span>Not KYC Verified</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between coin-info ">
+                                            <span>Listing Status:</span>
+                                            <div>
+                                                <span class="black">500 / 500</span>
+                                                <div class="badge btn-primary mb-1">
+                                                    <span class="text-white"> LISTED</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between coin-info">
+                                            <span>Launch:</span>
+                                            <span>March 22 2022</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between coin-info">
+                                            <span>Votes:</span>
+                                            <span>748214</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between coin-info border-0">
+                                            <span>Votes Today:</span>
+                                            <span class="plusmin">10140</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 mt-4">
+                                        <button type="button" class="btn btn-coin w-100">
+                                            <a href="#">VOTE FOR Ape Coin</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1 side w-100 h-100 col my-0">
+                        <div class="px-3 py-3 row ">
+                            <div class="col ">
+                                <div>
+                                    <h2 class="mb-3">
+                                        Coin Market Data
+                                    </h2>
+                                    <div>
+                                        <div class="d-flex justify-content-between coin-info">
+                                            <span>Price (USD):</span>
+                                            <span>$ 277.0200</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between coin-info ">
+                                            <span>Price Change (24h):</span>
+                                            <span class="plusmin">10140</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between coin-info">
+                                            <span>Marketcap:</span>
+                                            <span>$ 58,665,555</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between coin-info border-0">
+                                            <span>Total Liquidity:</span>
+                                            <span>$ 1,873,472</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between gap-3  p-0 mt-4 fit-content ">
+                                        <button type="button" class="btn charts-btn p-0 ">
+                                            <img src="assets/pancakeswap-cake-logo 1.png" alt="">
+                                            <a href="#">Panckae Swape</a>
+                                        </button>
+                                        <button type="button" class="btn charts-btn p-0 ">
+                                            <img src="assets/logo_flooz 1.png" alt="">
+                                            <a href="#">Flooz.Trade</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col twitter-fit ">
+                        <a class="twitter-timeline" data-height="650" data-theme="light"
+                            href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-6 p-0">
+        <div class="d-flex flex-row justify-content-between text-center">
+            <h3 class="h3">Promoted</h3>
+            <a href="submit.html">Promote your coin here</a>
+        </div>
+        <div>
+            <div class="table-background">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th></th>
+                            <th>#</th>
+                            <th colspan="3">Name</th>
+                            <th>Price ▼</th>
+                            <th>Market Cap ▼</th>
+                            <th>Change 24h ▼</th>
+                            <th>Launch ▼</th>
+                            <th>Chain ▼</th>
+                            <th>Votes ▼</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="tip-wl"><img onclick="src='assets/Star 2.svg'"
+                                        src="assets/Star 1.svg" alt=""></a></td>
+                            <td>1</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img class="tip-wl" src="assets/Star 1.svg" alt=""></td>
+                            <td>2</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>3</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>4</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Star 1.svg" alt=""></td>
+                            <td>5</td>
+                            <td><img src="assets/Group-1.png" alt=""></td>
+                            <td>Ape Coin</td>
+                            <td>APE</td>
+                            <td>-</td>
+                            <td>Presale</td>
+                            <td>-</td>
+                            <td>in 15 days</td>
+                            <td>BSC</td>
+                            <td>1,453</td>
+                            <td><button class="vote-btn">
+                                    <a href="vote.html">Vote</a>
+                                </button></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
-
-
     </div>
-
-    </div>
-
-    <div class="container">
-        <div class="">
-            <div class="">
-
-            </div>
-        </div>
-
-    </div>
-
-
 
 
 

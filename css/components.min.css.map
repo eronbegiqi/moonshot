@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/components.scss"
+    ],
+    "names": [],
+    "file": "components.min.css"
+}
