@@ -1,100 +1,118 @@
 //Colors
 
-$accent:#2E4FCC;
-$accentHover: #375FF5;
-$black:  #1A1C1E;
-$red: #FF0000;
-$green: #01B230;
-$grayish: #58667E;
-$gray: #E2E4E7;
-$txtHolder:#8D8D8D;
+$accent: #2e4fcc;
+$accentHover: #375ff5;
+$black: #1a1c1e;
+$red: #ff0000;
+$green: #01b230;
+$grayish: #58667e;
+$gray: #e2e4e7;
+$txtHolder: #8d8d8d;
 $graytable: #686868;
-$white: #FAFAFA;
+$white: #fafafa;
 
-
-.headertxt{
-  color:$grayish;
+.headertxt {
+  color: $grayish;
 }
-.txtHolder{
+.txtHolder {
   color: $txtHolder;
 }
-.accent{
+.accent {
   color: $accent;
 }
-.black{
+.black {
   color: $black !important;
   font-weight: 500;
 }
 // Font size
 
-$small:12px;
-$medium:17px;
-$big:26px;
+$small: 12px;
+$medium: 17px;
+$big: 26px;
 
-
-.md-font{
+.md-font {
   font-size: $medium;
 }
-.sm-font{
+.sm-font {
   font-size: 14px;
 }
 
+//Font weight
+
+.fw-500{
+  font-weight: 500;
+}
 //mixins
 
 @mixin mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin btn-coin {
-    background: $accent;
-    border-radius: 7px;
-    border:none;
+  background: $accent;
+  border-radius: 7px;
+  border: none;
 }
-@mixin btn-a{
+@mixin btn-a {
   color: #ffffff;
-      font-size: 16px;
-      font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+}
+@mixin bg-card {
+  background: #ffffff;
+  box-shadow: 0px 14.5186px 40.8754px rgba(0, 0, 0, 0.047);
+  border-radius: 7px;
+  border: none;
+  min-width: fit-content;
+  width: fit-content;
+  height: fit-content;
+}
+@mixin form-help {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 400;
+  color: $grayish;
 }
 
 //Scrollbar
 
 body::-webkit-scrollbar {
-    width: 10px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #acacac;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: $accentHover;    /* color of the scroll thumb */
-    border-radius: 7px;       /* roundness of the scroll thumb */
-  }
-  
+  width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #acacac; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $accentHover; /* color of the scroll thumb */
+  border-radius: 7px; /* roundness of the scroll thumb */
+}
+
 //Btn
-.btn-0{
-  border:none;
+.btn-0 {
+  border: none;
   background: none;
   font-size: 1.3em;
 }
 
-.fit-content{
-  max-width:auto;
+.fit-content {
+  max-width: auto;
   width: 354px;
   margin-right: auto;
   margin-left: auto;
 }
-.tradeview-fit{
+.tradeview-fit {
   min-width: fit-content;
   width: fit-content;
   height: 620px;
   margin: 0;
   padding: 0;
 }
-.twitter-fit{
+.twitter-fit {
   min-width: fit-content;
-  height:500px;
+  height: 500px;
   margin: 0 0 0 0;
   padding: 0;
   overflow: hidden;

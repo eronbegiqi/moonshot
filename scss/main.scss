@@ -406,6 +406,7 @@ button {
     color: $accent;
     font-weight: 600;
   }
+  
   .line {
     border-right: 2px solid $gray;
     width: 1px;
@@ -539,10 +540,7 @@ footer {
       font-size: 13px;
     }
     #emailHelp {
-      margin-top: 5px;
-      font-size: 11px;
-      font-weight: 400;
-      color: $grayish;
+      @include form-help;
     }
     input::placeholder {
       color: $txtHolder;
@@ -621,27 +619,22 @@ footer {
     height: auto;
   }
 }
+
 .card1 {
-  background: #ffffff;
-  min-width: fit-content;
-  width: fit-content;
-  height: fit-content;
-  box-shadow: 0px 14.5186px 40.8754pxrgba (0, 0, 0, 0.08);
-  border-radius: 7px;
-  border: none;
-  padding: 10px 15px;
+  @include bg-card;
   margin-bottom: 10px;
-  .desc-txt{
+  .desc-txt {
     font-weight: 400;
     font-size: 15px;
     color: $grayish;
     line-height: 24px;
   }
-  @media (max-width:1835px) {
+  @media (max-width: 1835px) {
     width: 100%;
   }
   .btn-coin {
     @include btn-coin;
+    padding: 10px 15px;
     min-width: 76px;
     min-height: 36px;
 
@@ -652,19 +645,19 @@ footer {
       @include btn-a;
     }
   }
-  .charts-btn{
-    border: 1px solid #2E4FCC;
+  .charts-btn {
+    border: 1px solid #2e4fcc;
     border-radius: 5px;
     background-color: none;
     width: 199px;
     height: 55px;
     align-items: center;
     text-align: center;
-    img{
+    img {
       width: 30px;
       height: 30px;
     }
-    a{
+    a {
       text-decoration: none;
       color: $black;
     }
@@ -682,11 +675,81 @@ footer {
       font-weight: 500;
       padding-bottom: 5px;
     }
-    
   }
 }
-@media (max-width:1449px) {
-  .w-btn{
+@media (max-width: 1449px) {
+  .w-btn {
     width: 100% !important;
+  }
+}
+.submit-form {
+  padding: 3rem 5rem;
+  @include bg-card;
+  h2 {
+    font-weight: 600;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    color: $grayish;
+    margin-top: 35px;
+  }
+  .form-size {
+    max-width: 550px;
+    .label-submit {
+      text-align: left;
+      display: block;
+      color: $black;
+      font-weight: 500;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .input-submit {
+      display: block;
+      width: 100%;
+      line-height: 1.5;
+      color: $black;
+      font-weight: 400;
+      font-size: 15px;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #58667e8b;
+      border-radius: 7px;
+      padding: 0.575rem 0.75rem;
+    }
+    .select-date {
+      display: inline-block;
+      width: fit-content;
+      min-width: 85px;
+      
+    }
+    .textarea-submit {
+      resize: none;
+      display: block;
+      width: 100%;
+      padding: $input-padding-y $input-padding-x;
+      font-family: $input-font-family;
+      font-size: 14px;
+      font-weight: $input-font-weight;
+      line-height: $input-line-height;
+      background-color: $input-bg;
+      background-clip: padding-box;
+      border: $input-border-width solid $input-border-color;
+      appearance: none; // Fix appearance for date inputs in Safari
+    }
+    .form-help {
+      @include form-help;
+    }
+    #checkbox{
+      border-radius: 0;
+      border-color: $grayish;
+    }
+    .btn-form{
+      @include btn-coin;
+      color: #fff;
+      width: fit-content;
+      @include mx-auto;
+      padding: 0 25px;
+    }
   }
 }

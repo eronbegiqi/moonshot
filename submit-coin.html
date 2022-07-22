@@ -64,7 +64,8 @@
                             <div class="">
                                 <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#login"
                                     class="me-4 ms-1">Log in</a>
-                                <button class="text-light" type="button" data-bs-toggle="modal" data-bs-target="#signup">
+                                <button class="text-light" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#signup">
                                     <a href="#">Sign up</a>
                                 </button>
                             </div>
@@ -82,7 +83,8 @@
                                             aria-label="Close"></button>
                                         <h5 id="login">Log In</h5>
                                         <div class="mb-4 desc-form">
-                                            <span>New to MoonshotCoins? </span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#signup">Create an account</a>
+                                            <span>New to MoonshotCoins? </span><a href="#" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#signup">Create an account</a>
                                         </div>
                                     </div>
                                     <div class="form-login ">
@@ -120,7 +122,8 @@
                                         <h5 id="login">Create an account</h5>
                                         <div class="mb-5 desc-form">
                                             <span>Gain access to additional features such as Watchlist tracking.
-                                                Already have an account? </span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#login">Log In</a>
+                                                Already have an account? </span><a href="#" type="button"
+                                                data-bs-toggle="modal" data-bs-target="#login">Log In</a>
                                         </div>
                                     </div>
                                     <div class="form-login ">
@@ -136,7 +139,8 @@
                                                 <label for="exampleInputPassword1" class="form-label1 float-end"><a
                                                         href="#">Forgot password?</a></label>
                                                 <input type="password" class="form-control1" id="exampleInputPassword1">
-                                                <div id="emailHelp" >Password should contain both letter and number, with minimum length  of <br>8 characters</div>
+                                                <div id="emailHelp">Password should contain both letter and number, with
+                                                    minimum length of <br>8 characters</div>
                                             </div>
                                             <div class="d-grid text-center login-btn">
                                                 <button type="submit" class="btn py-2">Create an account</button>
@@ -144,7 +148,8 @@
                                         </form>
                                     </div>
                                     <div class="mt-5 text-center modal-footer1">
-                                        <span>By proceeding, you agree to MoonshotCoins’s <br> <a href="$">Terms of Use</a> & <a href="#">Privacy Policy</a> .</span>
+                                        <span>By proceeding, you agree to MoonshotCoins’s <br> <a href="$">Terms of
+                                                Use</a> & <a href="#">Privacy Policy</a> .</span>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +180,169 @@
         </div>
 
     </div>
-
+    <section>
+        <div class="container mb-5 pb-3">
+            <div class="submit-form mx-auto ">
+                <div class="text-center">
+                    <h3 class="fw-bold">
+                        Submit new project
+                    </h3>
+                    <p>Please fill out this form carefully to add a new project to Moonshot Coins.<br>After submission,
+                        your project will be visible on the New Listings page. Get 500 votes to be officially listed on
+                        Moonshot Coins.</p>
+                </div>
+                <div class="form-size mx-auto my-5">
+                    <form>
+                        <div class="mb-4">
+                            <label for="project-name" class="label-submit">Project Name</label>
+                            <input type="email" class="input-submit" id="project-name" aria-describedby="emailHelp" required>
+                            <div class="form-help">Please provide the FULL name of the project (e.g. Bitcoin, Shiba Inu,
+                                Ripple, Holochain).</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="symbol" class="label-submit">Symbol</label>
+                            <input type="text" class="input-submit text-uppercase" id="symbol" required>
+                            <div class="form-help">(e.g. BTC, SHIB, XRP, HOT)</div>
+                        </div>
+                        <div class="mb-5">
+                            <label for="network" class="label-submit">Network/Chain</label>
+                            <select class="form-select input-submit fw-bolder" aria-label="Default select network" required>
+                                <option value="BSC" selected>Binance Smart Chain (BSC)</option>
+                                <option value="ETH">Etherium (ETH)</option>
+                                <option value="2">Fantom (FTM)</option>
+                                <option value="MATIC">Polygon (MATIC)</option>
+                                <option value="TRX">Tron (TRX)</option>
+                            </select>
+                        </div>
+                        <div class="mb-5">
+                            <label for="presale" class="label-submit">Project in presale phase?</label>
+                            <div class="form-check form-check-inline ms-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="inlineRadio1">No</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Yes</label>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <label for="contract" class="label-submit">Contract Address</label>
+                            <input type="text" class="input-submit " id="contract" placeholder="0xB8c77442e45F1F44dE1745F52C74426C631bDD52" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="exampleFormControlTextarea1" class="label-submit">Detailed Project Description (Cryptoasset)</label>
+                            <textarea class="textarea-submit" id="exampleFormControlTextarea1" rows="6" placeholder="Describe your coin here. What is the goal, plans, why is this coin unique?" required></textarea>
+                          </div>
+                          <div class="mb-5">
+                            <label for="date" class="label-submit">Launch Date</label>
+                            <select class="form-select input-submit fw-bolder select-date" aria-label="Launch Date" required>
+                                <option value selected>Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select class="form-select input-submit fw-bolder select-date" style="width: 135x;" aria-label="Launch Date" required>
+                                <option value selected>Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select class="form-select input-submit fw-bolder select-date" style="width: 85x;" aria-label="Launch Date" required>
+                                <option value selected>Year</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="chart-link" class="label-submit">Custom chart link (optional)</label>
+                            <input type="text" class="input-submit" id="chart-link" placeholder="https://dex.guru/token/0x...." aria-describedby="emailHelp">
+                            <div class="form-help">By default, Poocoin (BSC) and Dextools (ETH) is used. Enter custom chart link here if you want to use it.</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="chart-link" class="label-submit">Custom swap link (optional)</label>
+                            <input type="text" class="input-submit" id="chart-link" placeholder="https://apeswap.finance/..." aria-describedby="emailHelp">
+                            <div class="form-help">By default, PancakeSwap v2 (BSC) and UniSwap (ETH) is used. Enter custom swap link here if you want to use it, like Apeswap.</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="chart-link" class="label-submit">Website link (optional)</label>
+                            <input type="text" class="input-submit" id="chart-link" placeholder="https://moonshotcoins.com/" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-4">
+                            <label for="chart-link" class="label-submit">Telegram link (optional)</label>
+                            <input type="text" class="input-submit" id="chart-link" placeholder="https://t.me/moonshotcoins" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-4">
+                            <label for="chart-link" class="label-submit">Twitter link (optional)</label>
+                            <input type="text" class="input-submit" id="chart-link" placeholder="https://twitter/moonshotcoins" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-4">
+                            <label for="chart-link" class="label-submit">Discord link (optional)</label>
+                            <input type="text" class="input-submit" id="chart-link" placeholder="https://discord.gg/moonshotcoins" aria-describedby="emailHelp" >
+                        </div>
+                        <div class="mb-5">
+                            <label for="formFile" class="label-submit">Upload logo</label>
+                            <input class="form-control" onchange="validateSize(this)" type="file" id="formFile" required>
+                            <div class="form-help">3 conditions MUST be met: (1) Transparent background; (2) Square (200x200); unequal dimensions will be rejected! (3) PNG format. See <a href="https://onlinepngtools.com/create-transparent-png">https://onlinepngtools.com/create-transparent-png</a>  and <a href="https://www.photoresizer.com/">https://www.photoresizer.com/</a>.</div>
+                          </div>
+                          <div class="form-check form-check-inline mb-4 ">
+                            <input class="form-check-input " type="checkbox" id="checkbox" value="checked" required>
+                            <label class="label-submit me-3 " for="checkbox"> I agree to the <a href="#">Terms and Conditions*</a></label>
+                          </div>
+                        <div class="d-grid text-center ">
+                            <button type="submit" class="btn py-2 btn-form">Submit Coin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="bg-white">
