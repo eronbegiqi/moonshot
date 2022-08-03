@@ -11,7 +11,9 @@ body {
     color: $accent;
   }
 }
-
+header{
+  background-color: #fff;
+}
 td.negative {
   color: red;
 }
@@ -683,7 +685,7 @@ footer {
   }
 }
 .submit-form {
-  padding: 3rem 5rem;
+  padding: 4rem 3rem 5rem 5rem;
   @include bg-card;
   h2 {
     font-weight: 600;
@@ -727,6 +729,7 @@ footer {
       resize: none;
       display: block;
       width: 100%;
+      border-radius: 7px;
       padding: $input-padding-y $input-padding-x;
       font-family: $input-font-family;
       font-size: 14px;

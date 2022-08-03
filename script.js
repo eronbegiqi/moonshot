@@ -59,7 +59,6 @@ tippy(".lang", {
 
 // Copy text
 
-
 const copyToClipboard = (elementId) => {
   const text = document.getElementById(elementId).innerHTML;
   navigator.clipboard
@@ -76,14 +75,135 @@ const copyToClipboard = (elementId) => {
       console.error(`Error copying text to clipboard: ${err}`);
     });
 };
+//File uploader
 
-//Image logo upload size resulution
-function validateSize(input) {
-  const fileSize = input.files[0].size / 1024 / 1024; // in MiB
-  if (fileSize > 2) {
-    alert('File size exceeds 2 MiB');
-    // $(file).val(''); //for clearing with Jquery
-  } else {
-    // Proceed further
+// Register the plugin with FilePond
+FilePond.registerPlugin(FilePondPluginFileValidateType); // Type of file
+FilePond.registerPlugin(FilePondPluginImageValidateSize); // Resolution
+// Get a reference to the file input element
+const inputElement = document.querySelector('input[type="file"]');
+
+// Create a FilePond instance
+const pond = FilePond.create(inputElement, {
+  // Only accept images
+  allowImageValidateSize: [true],
+  imageValidateSizeMaxWidth: [200],
+  imageValidateSizeMaxHeight: [200],
+  imageValidateSizeLabelExpectedMaxSize: ["Maximum size is 200 x 200 pixels"],
+  acceptedFileTypes: ["image/png"],
+});
+
+(() => {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
+
+///Fetch API prices
+var requestOptions = {
+  method: "GET",
+  redirect: "follow",
+};
+
+const apis = [
+  {
+    id: "eth",
+    url: "https://api.etherscan.io/api?module=stats&action=ethprice&apikey=A648CSNISJNNW6TWAY6VYIRABFS2C7YCDT",
+  },
+  {
+    id: "bnb",
+    url: "https://api.bscscan.com/api?module=stats&action=bnbprice&apikey=512DXVIGWKJQCSDAUGV6JUIN9AV5G2JHKK\n",
+  },
+  {
+    id: "fantom",
+    url: "https://api.ftmscan.com/api?module=stats&action=ftmprice&apikey=W7T5QNHX5WIW9AN4BB8C62IISXS13N5JA8",
+  },
+];
+
+apis.forEach(function (api) {
+  async function getPrice() {
+    try {
+      let res = await fetch(api.url, requestOptions);
+      return await res.json();
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  async function renderPrice() {
+    let objs = await getPrice();
+    let price = objs.result;
+    let html = "$ " + `${price.ethusd}`;
+
+    let ids = document.getElementById(api.id);
+    ids.innerHTML = html;
+  }
+  renderPrice();
+});
+
+async function getPrice() {
+  try {
+    let res = await fetch(
+      "https://api.polygonscan.com/api?module=stats&action=maticprice&apikey=87SH1Q55XWEXAH9C2YIS1W4UFAC3T5KU39",
+      requestOptions
+    );
+    return await res.json();
+  } catch (error) {
+    console.log(error);
   }
 }
+async function renderPrice() {
+  let objs = await getPrice();
+  let price = objs.result;
+  let html = "$ " + `${price.maticusd}`;
+
+  let ids = document.getElementById("matic");
+  ids.innerHTML = html;
+}
+renderPrice();
+///Fetch API gas fee
+
+async function getGasfee() {
+  try {
+    let res = await fetch(
+      "https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=A648CSNISJNNW6TWAY6VYIRABFS2C7YCDT",
+      requestOptions
+    );
+    return await res.json();
+  } catch (error) {
+    console.log(error);
+  }
+}
+async function renderGasfee() {
+  let objs = await getGasfee();
+  let gasfee = objs.result;
+  let html = `${gasfee.ProposeGasPrice}`+  " Gwei" ;
+
+  let ids = document.getElementById("ethe-gas-standard");
+  ids.innerHTML = html;
+}
+renderGasfee();
+
+
+
+/////Password meter
+const myPassMeter = passwordStrengthMeter({
+  containerElement: "#pswmeter",
+  passwordInput: "#psw-input",
+});
